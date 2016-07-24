@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this, "你点了" +
+                Toast.makeText(MainActivity.this, "这是" +
                         mFruitList.get(position).getmName(), Toast.LENGTH_SHORT).show();
             }
         });
@@ -47,9 +47,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initFruit() {
-        String[] fruitName = {"apple", "banana", "orange", "watermelon", "pear", "grape",
+        String[] fruitName = { "banana", "orange", "watermelon", "pear", "grape",
                 "Pineapple", "strawberry", "cherry", "apple", "banana", "orange"};
-        int[] fruitImages = {R.drawable.apple_pic, R.drawable.banana_pic, R.drawable.orange_pic,
+        int[] fruitImages = { R.drawable.banana_pic, R.drawable.orange_pic,
                 R.drawable.watermelon_pic, R.drawable.pear_pic, R.drawable.grape_pic,
                 R.drawable.pineapple_pic, R.drawable.strawberry_pic, R.drawable.cherry_pic,
                 R.drawable.apple_pic, R.drawable.banana_pic, R.drawable.orange_pic};
